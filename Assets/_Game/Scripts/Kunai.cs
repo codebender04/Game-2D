@@ -6,6 +6,7 @@ using UnityEngine;
 public class Kunai : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private GameObject hitVFX;
     private void Start()
     {
         OnInIt();
@@ -24,6 +25,7 @@ public class Kunai : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             collision.GetComponent<Character>().OnHit(30f);
+            Instantiate(hitVFX, transform.position, transform.rotation);
             OnDespawn();
         }
     }

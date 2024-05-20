@@ -15,7 +15,6 @@ public class Bai2Va3 : MonoBehaviour
             if (currentIndex >= pointsArray.Length - 1)
             {
                 currentIndex = 0;
-                transform.position = pointsArray[currentIndex].position;
             }
             else currentIndex++;
         }
