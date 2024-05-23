@@ -89,7 +89,7 @@ public class Enemy : Character
 
     internal void SetTarget(Character character)
     {
-        this.target = character;
+        target = character;
         if (IsTargetInRange())
         {
             ChangeState(new AttackState());

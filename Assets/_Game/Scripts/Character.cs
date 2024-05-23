@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
     protected const string THROW = "throw";
     protected const string IDLE = "idle";
     protected const string JUMP = "jump";
+    protected const string GLIDE = "glide";
     protected const string FALL = "fall";
     protected const string DIE = "die";
 
